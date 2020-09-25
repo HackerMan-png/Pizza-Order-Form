@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>This is my website yes</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jaxson Hunt">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="The cure for cancer">
+    <link rel="shortcut icon" href="Favicon.png" type="image">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Best website ever">
+    <meta property="og:title" content="This is my website yes">
+</head>
+
+<body>
+    
+    <h1>Order your pizza here</h1>
+    <section>
+        <p>According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry! Breakfast is ready! Ooming! Hang on a second. Hello? - Barry? - Adam? - Oan you believe this is happening? - I can't. I'll pick you up. Looking sharp. Use the stairs. Your father paid good money for those. Sorry. I'm excited. Here's the graduate. We're very proud of you, son. A perfect report card, all B's. Very proud. Ma! I got a thing going here. - You got lint on your fuzz. - Ow! That's me! - Wave to us! We'll be in row 118,000. - Bye! Barry, I told you, stop flying in the house! - Hey, Adam. - Hey, Barry. - Is that fuzz gel? - A little. Special day, graduation. Never thought I'd make it. Three days grade school, three days high school. Those were awkward. Three days college. I'm glad I took a day and hitchhiked around the hive. You did come back different. - Hi, Barry. - Artie, growing a mustache? Looks good. - Hear about Frankie? - Yeah. - You going to the funeral? - No, I'm not going. Everybody knows, sting someone, you die. Don't waste it on a squirrel. Such a hothead. I guess he could have just gotten out of the way. I love this incorporating an amusement park into our day. That's why we don't need vacations.</p>
+        <form action="data.json" method="POST">
+            <!-- User Sign In -->
+            <fieldset>
+                <legend>Sign In</legend>
+                <ul style="list-style-type: none;">
+                    <li>User Name<br><label for="user.Login"></label>
+                        <input type="text" id="user.Login" name="userLogin">
+                    </li>
+                    <li>Password<br><label for="user.Pass"></label>
+                        <input type="password" id="user.Pass" name="userPass">
+                    </li>
+                    
+                </ul>
+            </fieldset>
+            <!-- For pizza size -->
+            <fieldset>
+                <legend>What size of pizza?</legend>
+                <ul style="list-style-type: none">
+                    <li><label for="pizzaSize.Small">
+                            <input type="radio" id="pizzaSize.Small" name="user.Size">Small
+                        </label></li>
+                    <li><label for="pizzaSize.Medium">
+                            <input type="radio" id="pizzaSize.Medium" name="user.Size">Medium
+                        </label></li>
+                    <li><label for="pizzaSize.Large">
+                            <input type="radio" id="pizzaSize.Large" name="user.Size">Large
+                        </label></li>
+                    <li><label for="pizzaSize.Extra">
+                            <input type="radio" id="pizzaSize.Extra" name="user.Size">Extra Large
+                        </label></li>
+                </ul>
+            </fieldset>
+            <!-- For pizza topppings -->
+            <fieldset>
+                <legend>Customize your pizza</legend>
+                <ul style="list-style-type: none;">
+                    <li><label for="toppings.Pepperoni">
+                            <input type="checkbox" id="toppings.Pepperoni" name="user.Toppings">Pepperoni
+                        </label></li>
+                    <li><label for="toppings.Sausage">
+                            <input type="checkbox" id="toppings.Sausage" name="user.Toppings">Sausage
+                        </label></li>
+                    <li><label for="toppings.Pineapples">
+                            <input type="checkbox" id="toppings.Pineapples" name="user.Toppings">Pineapples
+                        </label></li>
+                    <li><label for="toppings.Mushrooms">
+                            <input type="checkbox" id="toppings.Mushrooms" name="user.Toppings">Mushrooms
+                        </label></li>
+                    <li><label for="toppings.Bacon">
+                            <input type="checkbox" id="toppings.Bacon" name="user.Toppings">Bacon
+                    <li><label for="toppings.Ham">
+                            <input type="checkbox" id="toppings.Ham" name="user.Toppings">Ham
+                        </label></li>
+                    <li><label for="toppings.Cheese">
+                            <input type="checkbox" id="toppings.Cheese" name="user.Toppings">Extra Cheese
+                        </label></li>
+                    </label></li>
+                    </label></li>
+                </ul>
+            </fieldset>
+            <!-- For drinks -->
+            <fieldset>
+                <legend>Choose your drink</legend>
+                <ul style="list-style-type: none">
+                    <li><label for="drink.Coke">
+                            <input type="radio" id="drink.Coke" name="userDrink">Coke
+                        </label></li>
+                    <li><label for="drink.Sprite">
+                            <input type="radio" id="drink.Sprite" name="userDrink">Sprite
+                        </label></li>
+                    <li><label for="drink.Pepper">
+                            <input type="radio" id="drink.Pepper" name="userDrink">Dr. Pepper
+                        </label></li>
+                    <li><label for="drink.Pepsi">
+                            <input type="radio" id="drink.Pepsi" name="userDrink">Pepsi
+                        </label></li>
+                    <li><label for="drink.Mountain">
+                            <input type="radio" id="drink.Mountain" name="userDrink">Mountain Dew
+                        </label></li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+                <legend>Extra Requests or Information</legend>
+                <ul style="list-style-type: none;">
+                    <li>Any extra requests or information<br><label for="user.Info"></label><textarea id="user.Info" name="user Info" cols="60" rows="12" style="resize: none;"></textarea></li>
+                </ul>
+            </fieldset>
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>Payment Information</legend>
+                <ul style="list-style-type: none;">
+                    <li>(Please DONT put your actual card here)<br>Credit Card <label for="user.Card">
+                            <input type="text" id="paymentInfo" name="cardInfo">
+                            CVC
+                            <input type="text" id="user.cvc" name="cardInfo" size="2">
+                        </label></li><br>
+                    <li>Address<br><label for="user.Address">
+                            <input type="text" id="user.Address" name="Address" size="40">
+                        </label></li>
+                    <li>State<br><label for="user.State">
+                            <input type="text" id="user.State" name="State">
+                            <br>
+                            City<br>
+                            <input type="text" id="user.City" name="City">
+                        </label></li><br>
+                    <li><button type="submit"><img src="Submit.jpg"></button></li>
+
+                </ul>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
+
